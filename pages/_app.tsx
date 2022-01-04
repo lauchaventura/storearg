@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { ChakraProvider, Container, VStack, Image, Heading, Text, Box, Divider, Button } from '@chakra-ui/react'
+import { ChakraProvider, Container, VStack, Image, Box, Divider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
 import theme from '../theme'
 
@@ -11,7 +11,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         <title>StoreARG</title>
         <meta content="initial-scale=1.0, width=device-width" name="viewport" />
         <meta content="lauchaventura" name="author is goncy" />
-        //El autor es Gonzalo Pozzo, nos explico desde 0 como hacer el proyecto//
+        {/*El autor es Gonzalo Pozzo, nos explico desde 0 como hacer el proyecto*/}
         <meta content="Lautaro Ventura" name="copyright" />
       </Head>
       <ChakraProvider theme={theme}>
@@ -30,6 +30,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
               <a
                 href="https://www.github.com/lauchaventura"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Image
                   maxHeight={6}
